@@ -1,0 +1,159 @@
+<!--Template from w3schools.com-->
+<!DOCTYPE html>
+<html>
+<title>Media</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <!--https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.iolaniclassic.com%2Fwp-content%2Fuploads%2Fcampbell.png&imgrefurl=https%3A%2F%2Fwww.iolaniclassic.com%2Fteams%2Fcampbell%2F%3FportfolioCats%3D23&docid=wnRJhjapS6f3_M&tbnid=r36Ny6p4dUz8gM%3A&vet=10ahUKEwjO8tf4r7HkAhWSHTQIHcxtBjQQMwhoKAwwDA..i&w=531&h=424&bih=636&biw=1280&q=campbell%20high%20school%20logo&ved=0ahUKEwjO8tf4r7HkAhWSHTQIHcxtBjQQMwhoKAwwDA&iact=mrc&uact=8-->  
+  <img src="Images/C.png" alt="Campbell Sports Logo" style="width:100%">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lavender">
+    <p>HOME</p>
+  </a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lavender">
+    <p>ABOUT</p>
+  </a>     
+  <a href="why.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lavender">
+    <p>WHY</p>
+  </a>
+  <a href="port.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lavender">
+    <p>PORTFOLIO</p>
+  </a>
+  <a href="media.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <p>MEDIA</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>  
+    <a href="why.html" class="w3-bar-item w3-button" style="width:25% !important">WHY</a>
+    <a href="port.html" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+    <a href="media.html" class="w3-bar-item w3-button" style="width:25% !important">MEDIA</a>
+  </div>
+</div>
+
+  <!-- Media Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Media</h2>
+    <hr style="width:200px" class="w3-opacity">
+   
+<head>
+</head>
+<body>
+<b>
+<h4>
+<script>
+var text="Scroll Down for a Movie ⟶ Black Panther" // YOUR TEXT
+var speed=80 // SPEED OF FADE
+
+// ********** LEAVE THE NEXT BIT ALONE!
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</h4>
+</b>
+
+<br/>
+
+</body>
+      
+<head>
+<style>      
+video {
+  border-style: solid;
+  border-color: #151515;
+  border-width: 1px;  
+}
+</style>
+<!--Black Panther / Directed By: Ryan Coogler-->    
+<video class="solid" width="908" height="536" controls>
+<source src="video.MP4" alt="Black Panther" type="video/mp4">
+
+</video>
+    
+    
+
+  <!-- End Media Section -->
+  </div>
+  
+<!-- END PAGE CONTENT -->
+</div>
+    
+        <footer></footer>
+
+</body>
+</html>
